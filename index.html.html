@@ -1,186 +1,107 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uzman Hyundai | Çıkma Yedek Parça</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        :root {
-            --hyundai-blue: #002c5f;
-            --premium-gold: #c5a059;
-            --dark-bg: #0a0e12;
-            --card-bg: #ffffff;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
-        body { background-color: #f0f2f5; color: #333; overflow-x: hidden; }
-
-        /* Üst Vurgu Bandı */
-        .shipping-banner {
-            background: linear-gradient(90deg, var(--hyundai-blue), #004a99);
-            color: white;
-            text-align: center;
-            padding: 12px;
-            font-weight: 600;
-            font-size: 13px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        /* Navigasyon */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 20px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .logo { font-size: 26px; font-weight: 800; color: var(--hyundai-blue); text-transform: uppercase; letter-spacing: -1px; }
-        .logo span { color: var(--premium-gold); }
-
-        /* Dev Hero Alanı */
-        .hero {
-            height: 80vh;
-            background: linear-gradient(rgba(0,44,95,0.85), rgba(10,14,18,0.9)), 
-                        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 { font-size: 64px; font-weight: 800; margin-bottom: 20px; text-transform: lowercase; }
-        .hero p { font-size: 20px; opacity: 0.8; max-width: 800px; line-height: 1.6; }
-
-        /* Ürün Kartları Bölümü */
-        .container { max-width: 1300px; margin: -100px auto 50px; padding: 0 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 40px; }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .card:hover { transform: translateY(-15px); box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
-
-        .img-container { width: 100%; height: 280px; overflow: hidden; position: relative; }
-        .card img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
-        .card:hover img { scale: 1.1; }
-
-        .p-content { padding: 30px; text-align: center; }
-        .p-title { font-size: 18px; font-weight: 600; color: var(--hyundai-blue); margin-bottom: 20px; text-transform: lowercase; min-height: 50px; }
-
-        /* WhatsApp Buton - Premium */
-        .ws-btn {
-            background: var(--hyundai-blue);
-            color: white;
-            text-decoration: none;
-            padding: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: 0.3s;
-            border: 2px solid var(--hyundai-blue);
-        }
-
-        .ws-btn:hover { background: #fff; color: var(--hyundai-blue); }
-
-        /* İletişim Bilgileri */
-        footer { background: var(--dark-bg); color: white; padding: 80px 10%; margin-top: 100px; }
-        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
-        .footer-info h3 { color: var(--premium-gold); margin-bottom: 20px; font-size: 24px; }
-        .footer-info p { margin-bottom: 10px; opacity: 0.7; line-height: 1.8; }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 38px; }
-            .footer-grid { grid-template-columns: 1fr; }
-            header { flex-direction: column; gap: 15px; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uzman Hyundai Çıkma Yedek Parça | Ankara Ostim</title>
+  <meta name="description" content="Hyundai çıkma motor, şanzıman ve yedek parçalar. Ankara Ostim'de güvenilir hizmet.">
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap)" rel="stylesheet">
+  <style>
+    /* Buraya CSS kodlarını tam olarak Tuğul Fiat sitesinden kopyalayabilirsin (yukarıdaki taslakta zaten vardı) */
+    body {font-family:'Montserrat',sans-serif;color:#333;line-height:1.6;margin:0;padding:0;}
+    :root{--primary:#d32f2f;--primary-dark:#b71c1c;--secondary:#1a1a2e;--bg-light:#f8f9fa;--white:#fff;}
+    header{background:var(--secondary);color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:fixed;width:100%;top:0;z-index:1000;}
+    .logo{display:flex;align-items:center;gap:10px;}
+    .logo-icon{width:45px;height:45px;background:var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;}
+    .logo-text{font-size:22px;font-weight:700;}
+    nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:500;}
+    nav a:hover{color:var(--primary);}
+    .btn{display:inline-block;padding:12px 25px;border-radius:25px;text-decoration:none;font-weight:600;transition:0.3s;}
+    .btn-primary{background:var(--primary);color:#fff;}
+    .btn-primary:hover{background:var(--primary-dark);}
+    .hero{margin-top:80px;background:url('tugul-fiat-parca.jpg') center/cover no-repeat;position:relative;min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+    .hero::before{content:"";position:absolute;inset:0;background:rgba(26,26,46,0.8);}
+    .hero-content{position:relative;z-index:2;max-width:800px;padding:0 20px;}
+    .hero h1{font-size:42px;margin-bottom:15px;}
+    .hero p{font-size:18px;margin-bottom:25px;}
+    .products{padding:100px 20px;background:var(--bg-light);}
+    .container{max-width:1200px;margin:auto;}
+    .section-title{text-align:center;margin-bottom:50px;}
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+    .product-card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    .product-image img{width:100%;height:220px;object-fit:cover;}
+    .product-info{padding:20px;}
+    .product-info h3{margin:10px 0;font-size:18px;}
+    .product-actions{display:flex;gap:10px;margin-top:15px;}
+    .product-btn{flex:1;text-align:center;padding:10px;border-radius:10px;font-weight:600;text-decoration:none;}
+    .product-btn-primary{background:var(--primary);color:#fff;}
+    .product-btn-secondary{background:#25d366;color:#fff;}
+    .contact{padding:80px 20px;}
+    footer{background:var(--secondary);color:#fff;padding:50px 20px;text-align:center;}
+  </style>
 </head>
 <body>
 
-<div class="shipping-banner">✈️ türkiye geneli̇ 81 i̇le ayni gün kargo</div>
-
 <header>
-    <div class="logo">UZMAN <span>HYUNDAI</span></div>
-    <div style="font-weight: 600; font-size: 18px;">
-        <span style="color:var(--premium-gold)">📞</span> 0507 412 19 50
-    </div>
+  <div class="logo">
+    <div class="logo-icon">UH</div>
+    <div class="logo-text">UZMAN <span style="color:#d32f2f;">HYUNDAI</span> ÇIKMA YEDEK PARÇA</div>
+  </div>
+  <nav>
+    <a href="#urunler">Ürünler</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <a href="tel:+905074121950" class="btn btn-primary">📞 0507 412 19 50</a>
 </header>
 
 <section class="hero">
-    <h1>uzman hyundai çıkma yedek parça</h1>
-    <p>Ankara'nın merkezinden tüm Türkiye'ye en kaliteli, seçilmiş çıkma parçalar. Profesyonel hizmet, hızlı sevkiyat.</p>
+  <div class="hero-content">
+    <h1>Hyundai <span style="color:#d32f2f;">Çıkma Yedek Parça</span> Uzmanı</h1>
+    <p>Ankara Ostim’de Hyundai araçlar için garantili çıkma motor, şanzıman ve yedek parça hizmeti.</p>
+    <a href="[wa.me](https://wa.me/905074121950)" target="_blank" class="btn btn-primary">💬 WhatsApp'tan Ulaşın</a>
+  </div>
 </section>
 
-<div class="container">
-    <div class="grid" id="main-grid">
+<section class="products" id="urunler">
+  <div class="container">
+    <div class="section-title">
+      <h2>Ürün <span style="color:#d32f2f;">Kataloğu</span></h2>
+      <p>Hyundai araçlar için kaliteli çıkma parçalar</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="hyundai-i20-cikma-motor.jpg" alt="Hyundai i20 Çıkma Motor">
         </div>
-</div>
+        <div class="product-info">
+          <h3>Hyundai i20 1.4 Çıkma Motor</h3>
+          <div class="product-actions">
+            <a href="tel:+905074121950" class="product-btn product-btn-primary">📞 Ara</a>
+            <a href="[wa.me](https://wa.me/905074121950?text=Hyundai%20i20%20motor%20hakkında%20bilgi%20almak%20istiyorum)" target="_blank" class="product-btn product-btn-secondary">💬 WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="iletisim">
+  <div class="container">
+    <div class="section-title">
+      <h2>Bize <span style="color:#d32f2f;">Ulaşın</span></h2>
+      <p>7/24 iletişim — hızlı destek ve bilgi</p>
+    </div>
+    <p><strong>📞 Telefon:</strong> <a href="tel:+905074121950">0507 412 19 50</a></p>
+    <p><strong>💬 WhatsApp:</strong> <a href="[wa.me](https://wa.me/905074121950)" target="_blank">0507 412 19 50</a></p>
+    <p><strong>📍 Adres:</strong> OSTİM OSB Mah. 1126. Cad. No:7 Yenimahalle / Ankara</p>
+  </div>
+</section>
 
 <footer>
-    <div class="footer-grid">
-        <div class="footer-info">
-            <h3>İletişim Bilgileri</h3>
-            <p><strong>Adres:</strong> Ostim OSB Mah. 1126. Cad. No: 7 Yenimahalle/Ankara</p>
-            <p><strong>Telefon:</strong> 0507 412 19 50</p>
-            <p><strong>WhatsApp:</strong> 0507 412 19 50</p>
-        </div>
-        <div class="footer-info" style="text-align: right;">
-            <h3 style="color: #fff;">Hızlı Çözüm</h3>
-            <p>Aradığınız parçayı bulamadınız mı? <br> Fotoğrafını atın, biz bulalım.</p>
-        </div>
-    </div>
-    <p style="text-align: center; margin-top: 50px; opacity: 0.3; font-size: 12px;">© 2026 UZMAN HYUNDAI - PREMIUM AUTO PARTS</p>
+  © 2024 UZMAN HYUNDAI ÇIKMA YEDEK PARÇA – Tüm Hakları Saklıdır.
 </footer>
-
-<script>
-    // ÜRÜN EKLEME ALANI
-    const urunler = [
-        { ad: "hyundai i20 çıkma sağ far", resim: "https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=800" },
-        { ad: "hyundai tucson çıkma ön tampon", resim: "https://images.unsplash.com/photo-1621359900485-2e6bd66359f1?auto=format&fit=crop&w=800" },
-        { ad: "hyundai i30 çıkma direksiyon", resim: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800" }
-    ];
-
-    const grid = document.getElementById('main-grid');
-    const tel = "905074121950";
-
-    urunler.forEach(u => {
-        grid.innerHTML += `
-            <div class="card">
-                <div class="img-container">
-                    <img src="${u.resim}" alt="${u.ad}">
-                </div>
-                <div class="p-content">
-                    <div class="p-title">${u.ad}</div>
-                    <a href="https://wa.me/${tel}?text=Merhaba, ${u.ad} hakkında detaylı bilgi ve fiyat alabilir miyim?" class="ws-btn" target="_blank">
-                        WHATSAPP İLE SOR
-                    </a>
-                </div>
-            </div>
-        `;
-    });
-</script>
 
 </body>
 </html>

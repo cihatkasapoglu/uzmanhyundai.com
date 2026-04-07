@@ -1,107 +1,201 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uzman Hyundai Çıkma Yedek Parça | Ankara Ostim</title>
-  <meta name="description" content="Hyundai çıkma motor, şanzıman ve yedek parçalar. Ankara Ostim'de güvenilir hizmet.">
-  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
-  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap)" rel="stylesheet">
-  <style>
-    /* Buraya CSS kodlarını tam olarak Tuğul Fiat sitesinden kopyalayabilirsin (yukarıdaki taslakta zaten vardı) */
-    body {font-family:'Montserrat',sans-serif;color:#333;line-height:1.6;margin:0;padding:0;}
-    :root{--primary:#d32f2f;--primary-dark:#b71c1c;--secondary:#1a1a2e;--bg-light:#f8f9fa;--white:#fff;}
-    header{background:var(--secondary);color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:fixed;width:100%;top:0;z-index:1000;}
-    .logo{display:flex;align-items:center;gap:10px;}
-    .logo-icon{width:45px;height:45px;background:var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;}
-    .logo-text{font-size:22px;font-weight:700;}
-    nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:500;}
-    nav a:hover{color:var(--primary);}
-    .btn{display:inline-block;padding:12px 25px;border-radius:25px;text-decoration:none;font-weight:600;transition:0.3s;}
-    .btn-primary{background:var(--primary);color:#fff;}
-    .btn-primary:hover{background:var(--primary-dark);}
-    .hero{margin-top:80px;background:url('tugul-fiat-parca.jpg') center/cover no-repeat;position:relative;min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
-    .hero::before{content:"";position:absolute;inset:0;background:rgba(26,26,46,0.8);}
-    .hero-content{position:relative;z-index:2;max-width:800px;padding:0 20px;}
-    .hero h1{font-size:42px;margin-bottom:15px;}
-    .hero p{font-size:18px;margin-bottom:25px;}
-    .products{padding:100px 20px;background:var(--bg-light);}
-    .container{max-width:1200px;margin:auto;}
-    .section-title{text-align:center;margin-bottom:50px;}
-    .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
-    .product-card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
-    .product-image img{width:100%;height:220px;object-fit:cover;}
-    .product-info{padding:20px;}
-    .product-info h3{margin:10px 0;font-size:18px;}
-    .product-actions{display:flex;gap:10px;margin-top:15px;}
-    .product-btn{flex:1;text-align:center;padding:10px;border-radius:10px;font-weight:600;text-decoration:none;}
-    .product-btn-primary{background:var(--primary);color:#fff;}
-    .product-btn-secondary{background:#25d366;color:#fff;}
-    .contact{padding:80px 20px;}
-    footer{background:var(--secondary);color:#fff;padding:50px 20px;text-align:center;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uzman Hyundai | Çıkma Yedek Parça</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* HEADER */
+.header{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1920&q=80') no-repeat center;
+    background-size:cover;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.header::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    top:0;
+    left:0;
+}
+
+.header-content{
+    position:relative;
+    z-index:2;
+}
+
+.header h1{
+    font-size:48px;
+    font-weight:700;
+}
+
+.header p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.badge{
+    margin-top:20px;
+    display:inline-block;
+    padding:10px 20px;
+    background:#00c853;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* PRODUCTS */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    padding:12px;
+    background:#25D366;
+    color:#fff;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* CONTACT */
+.contact{
+    background:#0d1b2a;
+    color:#fff;
+    padding:40px 20px;
+    text-align:center;
+    margin-top:40px;
+}
+
+.contact h2{
+    margin-bottom:15px;
+}
+
+.contact p{
+    margin:5px 0;
+}
+
+/* FOOTER */
+.footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <div class="logo">
-    <div class="logo-icon">UH</div>
-    <div class="logo-text">UZMAN <span style="color:#d32f2f;">HYUNDAI</span> ÇIKMA YEDEK PARÇA</div>
-  </div>
-  <nav>
-    <a href="#urunler">Ürünler</a>
-    <a href="#iletisim">İletişim</a>
-  </nav>
-  <a href="tel:+905074121950" class="btn btn-primary">📞 0507 412 19 50</a>
-</header>
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>Hyundai <span style="color:#d32f2f;">Çıkma Yedek Parça</span> Uzmanı</h1>
-    <p>Ankara Ostim’de Hyundai araçlar için garantili çıkma motor, şanzıman ve yedek parça hizmeti.</p>
-    <a href="[wa.me](https://wa.me/905074121950)" target="_blank" class="btn btn-primary">💬 WhatsApp'tan Ulaşın</a>
-  </div>
+<!-- HEADER -->
+<section class="header">
+    <div class="header-content">
+        <h1>UZMAN HYUNDAI</h1>
+        <p>Çıkma Yedek Parçada Güvenin Adresi</p>
+        <div class="badge">81 İLE HIZLI KARGO</div>
+    </div>
 </section>
 
-<section class="products" id="urunler">
-  <div class="container">
-    <div class="section-title">
-      <h2>Ürün <span style="color:#d32f2f;">Kataloğu</span></h2>
-      <p>Hyundai araçlar için kaliteli çıkma parçalar</p>
-    </div>
-    <div class="products-grid">
-      <div class="product-card">
-        <div class="product-image">
-          <img src="hyundai-i20-cikma-motor.jpg" alt="Hyundai i20 Çıkma Motor">
+<!-- PRODUCTS -->
+<div class="container">
+    <h2 style="margin-bottom:20px;">Ürünler</h2>
+
+    <div class="products">
+
+        <!-- ÜRÜN 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Hyundai i20 Ön Tampon</h3>
+                <a class="btn" href="https://wa.me/905074121950?text=Hyundai i20 Ön Tampon hakkında bilgi almak istiyorum">WhatsApp'tan Sor</a>
+            </div>
         </div>
-        <div class="product-info">
-          <h3>Hyundai i20 1.4 Çıkma Motor</h3>
-          <div class="product-actions">
-            <a href="tel:+905074121950" class="product-btn product-btn-primary">📞 Ara</a>
-            <a href="[wa.me](https://wa.me/905074121950?text=Hyundai%20i20%20motor%20hakkında%20bilgi%20almak%20istiyorum)" target="_blank" class="product-btn product-btn-secondary">💬 WhatsApp</a>
-          </div>
+
+        <!-- ÜRÜN 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Hyundai Accent Motor</h3>
+                <a class="btn" href="https://wa.me/905074121950?text=Hyundai Accent Motor hakkında bilgi almak istiyorum">WhatsApp'tan Sor</a>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="contact" id="iletisim">
-  <div class="container">
-    <div class="section-title">
-      <h2>Bize <span style="color:#d32f2f;">Ulaşın</span></h2>
-      <p>7/24 iletişim — hızlı destek ve bilgi</p>
     </div>
-    <p><strong>📞 Telefon:</strong> <a href="tel:+905074121950">0507 412 19 50</a></p>
-    <p><strong>💬 WhatsApp:</strong> <a href="[wa.me](https://wa.me/905074121950)" target="_blank">0507 412 19 50</a></p>
-    <p><strong>📍 Adres:</strong> OSTİM OSB Mah. 1126. Cad. No:7 Yenimahalle / Ankara</p>
-  </div>
-</section>
+</div>
 
-<footer>
-  © 2024 UZMAN HYUNDAI ÇIKMA YEDEK PARÇA – Tüm Hakları Saklıdır.
-</footer>
+<!-- CONTACT -->
+<div class="contact">
+    <h2>İletişim</h2>
+    <p><strong>Telefon & WhatsApp:</strong> 0507 412 19 50</p>
+    <p><strong>Adres:</strong> Ostim OSB Mah. 1126. Cad. No: 7 Yenimahalle / Ankara</p>
+    <p>Türkiye'nin 81 iline hızlı ve güvenli kargo</p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Uzman Hyundai | Tüm Hakları Saklıdır
+</div>
 
 </body>
 </html>
